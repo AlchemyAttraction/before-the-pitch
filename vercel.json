@@ -1,0 +1,13 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/before-the-pitch.pdf" }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "Content-Disposition", "value": "inline; filename=\"Before-the-Pitch-Robyn-Linn.pdf\"" }
+      ]
+    }
+  ]
+}
